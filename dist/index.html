@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,viewport-fit=cover">
+    <title>熊猫</title>
+  </head>
+  <body>
+    <div id="demo"></div>
+    <style id="demo2"></style>
+    <div id="buttons">
+      <button id="btnPause">暂停</button>
+      <button id="btnPlay">播放</button>
+      <button id="btnSlow">慢速</button>
+      <button id="btnNormal">正常</button>
+      <button id="btnFast">快速</button>
+    </div>
+    <style>* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      *::before {
+        box-sizing: border-box;
+      }
+      *::after {
+        box-sizing: border-box;
+      }
+
+      #buttons {
+        position: fixed;
+        right: 0;
+        top: 16px;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        margin-top: 12px;
+        margin-right: 12px;
+      }
+      #buttons > button {
+        margin-bottom: 12px;
+        padding: 8px 20px;
+        border: 1px solid rgb(241, 243, 243);
+        border-radius: 10%;
+        background: rgb(168, 211, 199);
+        color: rgb(39, 39, 39);
+      }
+      #demo2 {
+        display: none;
+      }
+      #demo {
+        position: fixed;
+        top: 16px;
+        left: 12px;
+        width: 100%;
+        height: 50vh;
+        overflow-y: auto;
+      }
+      #demo::-webkit-scrollbar {
+        display: none;
+      }
+      #html {
+        position: fixed;
+        bottom: -36px;
+        left: 0;
+        width: 100%;
+        height: 50vh;
+      }</style>
+    <div id="html">
+      <div class="skin">
+        <div class="ear left"></div>
+        <div class="ear right"></div>
+        <div class="face">
+          <div class="eye left"></div>
+          <div class="eye right"></div>
+          <div class="nose"></div>
+          <div class="mouth">
+            <div class="lip left"></div>
+            <div class="lip right"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.1f19ae8e.js"></script>
+  </body>
+</html>
